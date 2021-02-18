@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <body>
-    <div>
-        <form>
+    <style>
+        .form-section{
+            color: rgb(157, 211, 9);
+        }
+        .myform{
+            background: rgb(60, 136, 130);
+        }
+        .submit-btn{
+            color: rgb(38, 0, 255);
+            border-color: rgb(32, 30, 31);
+        }
+
+    </style>
+    <div class="form-section">
+        <form class="myform">
             <!--
                 how to create forms in html
                 use label-to write the email
                 use input to specify the input type
             -->
             <label for="firstname">firs-tname</label>
-            <input type="text" id="firstname"><br>
+            <input type="text" id="firstname" placeholder="input first name"><br>
             <label for="firstname">second-name</label>
-            <input type="text" id="secondname"><br>
+            <input type="text" id="secondname" placeholder="input second name"><br>
             <label for="email">email</label>
-            <input type="email" id="email"><br>
+            <input type="email" id="email" placeholder="name@work-email.com"><br>
             <label for="password">password</label>
-            <input type="password" id="password"><br>
+            <input type="password" id="password" placeholder="input password" required><br>
             <label for="date">Date</label>
             <input type="datetime-local" id="date"><br>
-            <input type="submit"><br>
+            <input type="submit" class="submit-btn"><br>
             <label for="button">click_here</label>
             <input type="button" id="btn"><br>
         </form>
     </div>
+    
 </body>

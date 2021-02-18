@@ -1,0 +1,18 @@
+var()->function is used to insert 
+values of a css variable
+Agood use of css variables is when it 
+comes to the colors of your design
+instead of copy and paste the same color 
+over and over again you can place them
+in a variable 
+syntax{
+    var(name,value)
+    name starts with two dashes
+    value --optional also called the 
+    falbak value
+}
+first of all css variables can have a global or local scope
+-To create variables with global scope ,declarethem
+in the :rootselector
+-To create a variable with local scope declare it inside th selector
+that is going to use it
