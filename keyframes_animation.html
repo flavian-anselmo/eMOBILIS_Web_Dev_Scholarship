@@ -1,0 +1,73 @@
+<style>
+    /*
+    to animate an element 
+    you need to know the 
+    animation property and
+    @keyframes rule
+    -the annimation property 
+    controls how the animation
+    should behave and @keyframe rule
+    controls what happens during
+    that animation
+    There are 8 animation  
+    */
+    div {
+      height: 40px;
+      width: 70%;
+      background: black;
+      margin: 50px auto;
+      border-radius: 5px;
+      position:relative;
+      /*the position must be relative 
+      for the object to move 
+      */
+    }
+  
+    #rect {
+        animation-name: rainbow;
+        animation-iteration-count: infinite;
+        animation-duration: 4s;
+
+    }
+    button:hover {
+        animation-name: background-color;
+        /*animation-fill-mode-forwward---
+        specifies a style for 
+          the element when the animation
+          is not playing before it starts after it ends
+          or both  but for backwardsit gets the first value
+          set */
+        animation-fill-mode:forwards;
+        animation-duration: 500s;
+    }
+    @keyframes background-color{
+        100%{
+        background-color:#0f4f88;
+        }
+    }
+    @keyframes rainbow{
+        0%{
+            background-color: aqua;
+            top:0px;
+            right:30px;
+
+        }
+        50%{
+            background-color: rgb(143, 39, 134);
+            top:80px;
+            left:5px
+        }
+        100%{
+            background-color: rgb(139, 45, 45);
+            top:0px;
+            right: 30px;
+        }
+
+    }
+  
+  
+  
+  
+  </style>
+  <div id="rect"></div>
+  <button>Register</button>
